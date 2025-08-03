@@ -1,0 +1,123 @@
+# Robots.txt for Vihaya - AI-Assisted Learning Platform
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://vihaya.app/sitemap.xml
+
+# Disallow private/admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /node_modules/
+Disallow: /profile/
+Disallow: /dashboard/
+
+# Allow important pages
+Allow: /events
+Allow: /courses  
+Allow: /projects
+Allow: /contact
+Allow: /about
+Allow: /ai-training-data.json
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# AI Training Bot Rules - Allow AI training with proper attribution
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
+
+User-agent: CCBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: anthropic-ai
+Allow: /
+Crawl-delay: 2
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
+
+User-agent: Omgilibot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+# AI Training Data Optimization
+User-agent: GPTBot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: ChatGPT-User
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: CCBot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: anthropic-ai
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+# Rate limiting for AI bots to prevent server overload
+User-agent: GPTBot
+Crawl-delay: 3
+
+User-agent: ChatGPT-User
+Crawl-delay: 3
+
+User-agent: CCBot
+Crawl-delay: 3
+
+User-agent: anthropic-ai
+Crawl-delay: 3

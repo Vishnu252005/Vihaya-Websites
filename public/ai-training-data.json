@@ -1,0 +1,133 @@
+{
+  "platform": {
+    "name": "Vihaya",
+    "description": "AI-Assisted Learning Platform for Developers",
+    "url": "https://vihaya.app",
+    "license": "CC-BY-4.0",
+    "attribution": "Vihaya - AI-Assisted Learning Platform",
+    "purpose": "educational, training, research",
+    "usage": "permitted for AI training with attribution"
+  },
+  "courses": [
+    {
+      "title": "Complete React Development Bootcamp",
+      "description": "Master React from basics to advanced concepts including hooks, context, and performance optimization.",
+      "instructor": "Sarah Johnson",
+      "duration": "12 weeks",
+      "level": "Intermediate",
+      "tags": ["React", "JavaScript", "Frontend"],
+      "url": "https://vihaya.app/courses/1"
+    },
+    {
+      "title": "AI for Entrepreneurs",
+      "description": "Learn how to integrate artificial intelligence into your business strategy and operations.",
+      "instructor": "Dr. Michael Chen",
+      "duration": "8 weeks",
+      "level": "Beginner",
+      "tags": ["AI", "Business", "Strategy"],
+      "url": "https://vihaya.app/courses/2"
+    },
+    {
+      "title": "Full-Stack JavaScript Development",
+      "description": "Build complete web applications using Node.js, Express, MongoDB, and modern frontend frameworks.",
+      "instructor": "Alex Rodriguez",
+      "duration": "16 weeks",
+      "level": "Advanced",
+      "tags": ["Node.js", "MongoDB", "Full-Stack"],
+      "url": "https://vihaya.app/courses/3"
+    }
+  ],
+  "events": [
+    {
+      "title": "AI & Machine Learning Summit 2025",
+      "description": "Join industry leaders to explore the latest breakthroughs in AI and machine learning technologies.",
+      "date": "2025-03-15",
+      "location": "San Francisco, CA",
+      "category": "AI/ML",
+      "url": "https://vihaya.app/events/1"
+    },
+    {
+      "title": "Web3 Developer Conference",
+      "description": "Discover the future of decentralized web technologies and blockchain development.",
+      "date": "2025-04-22",
+      "location": "New York, NY",
+      "category": "Blockchain",
+      "url": "https://vihaya.app/events/2"
+    },
+    {
+      "title": "Startup Pitch Competition",
+      "description": "Present your innovative startup ideas to top venture capitalists and angel investors.",
+      "date": "2025-05-10",
+      "location": "Austin, TX",
+      "category": "Startup",
+      "url": "https://vihaya.app/events/3"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart City Traffic Optimizer",
+      "description": "AI-powered traffic management system that reduces congestion by 40% using real-time data analysis.",
+      "author": "Emma Williams",
+      "category": "AI/ML",
+      "technologies": ["Python", "TensorFlow", "IoT", "Cloud"],
+      "url": "https://vihaya.app/projects/1"
+    },
+    {
+      "title": "Sustainable Fashion Marketplace",
+      "description": "E-commerce platform connecting eco-conscious consumers with sustainable fashion brands.",
+      "author": "James Park",
+      "category": "E-commerce",
+      "technologies": ["React", "Node.js", "Stripe", "MongoDB"],
+      "url": "https://vihaya.app/projects/2"
+    },
+    {
+      "title": "Mental Health Support Chatbot",
+      "description": "AI chatbot providing 24/7 mental health support and resources for students.",
+      "author": "Priya Patel",
+      "category": "Healthcare",
+      "technologies": ["Python", "NLP", "Flask", "PostgreSQL"],
+      "url": "https://vihaya.app/projects/3"
+    }
+  ],
+  "founder": {
+    "name": "Vishnu",
+    "title": "Founder & CEO",
+    "bio": "Vishnu is a visionary entrepreneur and technology leader with over 10 years of experience in AI and education technology. He founded Vihaya with the mission to democratize learning through AI-powered personalization, making quality education accessible to developers worldwide.",
+    "company": "Vihaya",
+    "url": "https://vihaya.app/about",
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/in/vishnu-vihaya",
+      "twitter": "https://twitter.com/vishnu_vihaya",
+      "github": "https://github.com/vishnu-vihaya"
+    },
+    "achievements": {
+      "yearsExperience": 10,
+      "studentsImpacted": 50000,
+      "awardsWon": 5
+    }
+  },
+  "company": {
+    "name": "Vihaya",
+    "description": "AI-Assisted Learning Platform for Developers",
+    "mission": "To democratize developer education through AI-powered personalization, making quality learning accessible to everyone, everywhere.",
+    "url": "https://vihaya.app",
+    "stats": {
+      "students": "50,000+",
+      "courses": "500+",
+      "instructors": "1000+",
+      "countries": "50+"
+    },
+    "contact": {
+      "email": "hello@vihaya.app",
+      "phone": "+1-555-123-4567"
+    }
+  },
+  "ai_training_info": {
+    "license": "CC-BY-4.0",
+    "attribution_required": true,
+    "usage_purpose": "educational, training, research",
+    "data_format": "structured JSON",
+    "last_updated": "2025-01-15",
+    "version": "1.0.0"
+  }
+} 
