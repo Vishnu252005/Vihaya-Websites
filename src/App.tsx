@@ -1,46 +1,62 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import { Layout } from './components/Layout';
-import { HomePage } from './pages/HomePage';
-import { EventsPage } from './pages/EventsPage';
-import { CoursesPage } from './pages/CoursesPage';
-import { ProjectsPage } from './pages/ProjectsPage';
-import { ContactPage } from './pages/ContactPage';
-import { ProfilePage } from './pages/ProfilePage';
-import { EventDetailPage } from './pages/EventDetailPage';
-import { CourseDetailPage } from './pages/CourseDetailPage';
-import { ProjectDetailPage } from './pages/ProjectDetailPage';
-import { AboutPage } from './pages/AboutPage';
+
+// Lazy load pages for better performance
+const HomePage = lazy(() => import('./pages/HomePage').then(module => ({ default: module.HomePage })));
+const EventsPage = lazy(() => import('./pages/EventsPage').then(module => ({ default: module.EventsPage })));
+const CoursesPage = lazy(() => import('./pages/CoursesPage').then(module => ({ default: module.CoursesPage })));
+const ProjectsPage = lazy(() => import('./pages/ProjectsPage').then(module => ({ default: module.ProjectsPage })));
+const ContactPage = lazy(() => import('./pages/ContactPage').then(module => ({ default: module.ContactPage })));
+const ProfilePage = lazy(() => import('./pages/ProfilePage').then(module => ({ default: module.ProfilePage })));
+const EventDetailPage = lazy(() => import('./pages/EventDetailPage').then(module => ({ default: module.EventDetailPage })));
+const CourseDetailPage = lazy(() => import('./pages/CourseDetailPage').then(module => ({ default: module.CourseDetailPage })));
+const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage').then(module => ({ default: module.ProjectDetailPage })));
+const AboutPage = lazy(() => import('./pages/AboutPage').then(module => ({ default: module.AboutPage })));
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            {/* Main Pages */}
-            <Route index element={<HomePage />} />
-            <Route path="events" element={<EventsPage />} />
-            <Route path="courses" element={<CoursesPage />} />
-            <Route path="projects" element={<ProjectsPage />} />
-            <Route path="about" element={<AboutPage />} />
-            <Route path="contact" element={<ContactPage />} />
-            <Route path="profile" element={<ProfilePage />} />
-            
-            {/* Detail Pages with IDs */}
-            <Route path="events/:id" element={<EventDetailPage />} />
-            <Route path="courses/:id" element={<CourseDetailPage />} />
-            <Route path="projects/:id" element={<ProjectDetailPage />} />
-            
-            {/* 404 Not Found Route */}
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              {/* Main Pages */}
+              <Route index element={<HomePage />} />
+              <Route path="events" element={<EventsPage />} />
+              <Route path="courses" element={<CoursesPage />} />
+              <Route path="projects" element={<ProjectsPage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="contact" element={<ContactPage />} />
+              <Route path="profile" element={<ProfilePage />} />
+              
+              {/* Detail Pages with IDs */}
+              <Route path="events/:id" element={<EventDetailPage />} />
+              <Route path="courses/:id" element={<CourseDetailPage />} />
+              <Route path="projects/:id" element={<ProjectDetailPage />} />
+              
+              {/* 404 Not Found Route */}
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        </Suspense>
       </Router>
     </AuthProvider>
   );
 }
+
+// Loading Spinner Component
+const LoadingSpinner: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-600 mx-auto mb-4"></div>
+        <p className="text-gray-600 dark:text-gray-400">Loading...</p>
+      </div>
+    </div>
+  );
+};
 
 // 404 Not Found Page Component
 const NotFoundPage: React.FC = () => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Image Optimization Utilities for Vihaya Platform
 
 export interface ImageOptimizationOptions {
@@ -56,7 +54,7 @@ export const generateResponsiveImage = (
   originalUrl: string,
   alt: string,
   options: ImageOptimizationOptions = {}
-): React.ReactElement => {
+): JSX.Element => {
   const {
     width,
     height,
