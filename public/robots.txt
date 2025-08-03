@@ -39,7 +39,7 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
-# AI Training Bot Rules - Allow AI training with proper attribution
+# Generative AI Engine Optimization - Allow AI training with proper attribution
 User-agent: GPTBot
 Allow: /
 Crawl-delay: 2
@@ -68,13 +68,210 @@ User-agent: Applebot
 Allow: /
 Crawl-delay: 1
 
-# AI Training Data Optimization
+# Modern Generative AI Engines
+User-agent: Google-Extended
+Allow: /
+Crawl-delay: 2
+
+User-agent: GoogleAI
+Allow: /
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: BingPreview
+Allow: /
+Crawl-delay: 2
+
+User-agent: FacebookBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: TwitterBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 2
+
+User-agent: TelegramBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: DiscordBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: SlackBot
+Allow: /
+Crawl-delay: 2
+
+# AI Research and Development Bots
+User-agent: researchbot
+Allow: /
+Crawl-delay: 3
+
+User-agent: academicbot
+Allow: /
+Crawl-delay: 3
+
+User-agent: scholarbot
+Allow: /
+Crawl-delay: 3
+
+User-agent: educationbot
+Allow: /
+Crawl-delay: 3
+
+# Generative AI Training Specific
+User-agent: genai-training
+Allow: /
+Crawl-delay: 2
+
+User-agent: llm-crawler
+Allow: /
+Crawl-delay: 2
+
+User-agent: ai-research
+Allow: /
+Crawl-delay: 3
+
+User-agent: machine-learning
+Allow: /
+Crawl-delay: 3
+
+User-agent: deep-learning
+Allow: /
+Crawl-delay: 3
+
+User-agent: neural-network
+Allow: /
+Crawl-delay: 3
+
+# Content Generation AI
+User-agent: content-generator
+Allow: /
+Crawl-delay: 2
+
+User-agent: text-generator
+Allow: /
+Crawl-delay: 2
+
+User-agent: code-generator
+Allow: /
+Crawl-delay: 2
+
+User-agent: image-generator
+Allow: /
+Crawl-delay: 2
+
+User-agent: video-generator
+Allow: /
+Crawl-delay: 2
+
+# AI Assistant Bots
+User-agent: assistant-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: help-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: support-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: chat-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: virtual-assistant
+Allow: /
+Crawl-delay: 2
+
+# AI Development and Testing
+User-agent: ai-dev
+Allow: /
+Crawl-delay: 3
+
+User-agent: ai-test
+Allow: /
+Crawl-delay: 3
+
+User-agent: model-training
+Allow: /
+Crawl-delay: 3
+
+User-agent: data-collection
+Allow: /
+Crawl-delay: 3
+
+# Generative AI Platforms
+User-agent: openai-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: anthropic-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: google-ai-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: microsoft-ai-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: meta-ai-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: amazon-ai-bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: apple-ai-bot
+Allow: /
+Crawl-delay: 2
+
+# AI Content Analysis
+User-agent: content-analyzer
+Allow: /
+Crawl-delay: 2
+
+User-agent: sentiment-analyzer
+Allow: /
+Crawl-delay: 2
+
+User-agent: topic-modeler
+Allow: /
+Crawl-delay: 2
+
+User-agent: keyword-extractor
+Allow: /
+Crawl-delay: 2
+
+User-agent: entity-recognizer
+Allow: /
+Crawl-delay: 2
+
+# Generative AI Training Data Optimization
 User-agent: GPTBot
 Allow: /courses/
 Allow: /events/
 Allow: /projects/
 Allow: /about/
 Allow: /ai-training-data.json
+Allow: /sitemap.xml
 Disallow: /admin/
 Disallow: /api/
 Disallow: /profile/
@@ -85,6 +282,7 @@ Allow: /events/
 Allow: /projects/
 Allow: /about/
 Allow: /ai-training-data.json
+Allow: /sitemap.xml
 Disallow: /admin/
 Disallow: /api/
 Disallow: /profile/
@@ -95,6 +293,7 @@ Allow: /events/
 Allow: /projects/
 Allow: /about/
 Allow: /ai-training-data.json
+Allow: /sitemap.xml
 Disallow: /admin/
 Disallow: /api/
 Disallow: /profile/
@@ -105,6 +304,220 @@ Allow: /events/
 Allow: /projects/
 Allow: /about/
 Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+# Modern Generative AI Training Access
+User-agent: Google-Extended
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: GoogleAI
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: openai-bot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: anthropic-bot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+# AI Research and Academic Access
+User-agent: researchbot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: academicbot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: scholarbot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: educationbot
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+# Generative AI Development Access
+User-agent: genai-training
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: llm-crawler
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: ai-research
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: machine-learning
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: deep-learning
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: neural-network
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+# Content Generation AI Access
+User-agent: content-generator
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: text-generator
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: code-generator
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: image-generator
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
+Disallow: /admin/
+Disallow: /api/
+Disallow: /profile/
+
+User-agent: video-generator
+Allow: /courses/
+Allow: /events/
+Allow: /projects/
+Allow: /about/
+Allow: /ai-training-data.json
+Allow: /sitemap.xml
 Disallow: /admin/
 Disallow: /api/
 Disallow: /profile/
@@ -120,4 +533,124 @@ User-agent: CCBot
 Crawl-delay: 3
 
 User-agent: anthropic-ai
+Crawl-delay: 3
+
+# Generative AI Engine Rate Limiting
+User-agent: Google-Extended
+Crawl-delay: 3
+
+User-agent: GoogleAI
+Crawl-delay: 3
+
+User-agent: openai-bot
+Crawl-delay: 3
+
+User-agent: anthropic-bot
+Crawl-delay: 3
+
+User-agent: genai-training
+Crawl-delay: 3
+
+User-agent: llm-crawler
+Crawl-delay: 3
+
+User-agent: ai-research
+Crawl-delay: 3
+
+User-agent: machine-learning
+Crawl-delay: 3
+
+User-agent: deep-learning
+Crawl-delay: 3
+
+User-agent: neural-network
+Crawl-delay: 3
+
+User-agent: content-generator
+Crawl-delay: 3
+
+User-agent: text-generator
+Crawl-delay: 3
+
+User-agent: code-generator
+Crawl-delay: 3
+
+User-agent: image-generator
+Crawl-delay: 3
+
+User-agent: video-generator
+Crawl-delay: 3
+
+# AI Research and Academic Rate Limiting
+User-agent: researchbot
+Crawl-delay: 4
+
+User-agent: academicbot
+Crawl-delay: 4
+
+User-agent: scholarbot
+Crawl-delay: 4
+
+User-agent: educationbot
+Crawl-delay: 4
+
+# AI Development and Testing Rate Limiting
+User-agent: ai-dev
+Crawl-delay: 4
+
+User-agent: ai-test
+Crawl-delay: 4
+
+User-agent: model-training
+Crawl-delay: 4
+
+User-agent: data-collection
+Crawl-delay: 4
+
+# AI Content Analysis Rate Limiting
+User-agent: content-analyzer
+Crawl-delay: 3
+
+User-agent: sentiment-analyzer
+Crawl-delay: 3
+
+User-agent: topic-modeler
+Crawl-delay: 3
+
+User-agent: keyword-extractor
+Crawl-delay: 3
+
+User-agent: entity-recognizer
+Crawl-delay: 3
+
+# AI Assistant Bots Rate Limiting
+User-agent: assistant-bot
+Crawl-delay: 3
+
+User-agent: help-bot
+Crawl-delay: 3
+
+User-agent: support-bot
+Crawl-delay: 3
+
+User-agent: chat-bot
+Crawl-delay: 3
+
+User-agent: virtual-assistant
+Crawl-delay: 3
+
+# Generative AI Platform Rate Limiting
+User-agent: google-ai-bot
+Crawl-delay: 3
+
+User-agent: microsoft-ai-bot
+Crawl-delay: 3
+
+User-agent: meta-ai-bot
+Crawl-delay: 3
+
+User-agent: amazon-ai-bot
+Crawl-delay: 3
+
+User-agent: apple-ai-bot
 Crawl-delay: 3

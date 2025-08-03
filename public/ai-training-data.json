@@ -13,28 +13,85 @@
       "title": "Complete React Development Bootcamp",
       "description": "Master React from basics to advanced concepts including hooks, context, and performance optimization.",
       "instructor": "Sarah Johnson",
+      "instructorSocial": {
+        "linkedin": "https://linkedin.com/in/sarah-johnson-react",
+        "twitter": "https://twitter.com/sarah_react",
+        "github": "https://github.com/sarah-johnson",
+        "youtube": "https://youtube.com/@sarah-react"
+      },
       "duration": "12 weeks",
       "level": "Intermediate",
       "tags": ["React", "JavaScript", "Frontend"],
-      "url": "https://vihaya.app/courses/1"
+      "url": "https://vihaya.app/courses/1",
+      "rating": 4.9,
+      "students": 2500,
+      "price": "$299",
+      "certificate": true,
+      "aiAssisted": true,
+      "languages": ["English", "Spanish", "French"],
+      "prerequisites": ["Basic JavaScript", "HTML/CSS"],
+      "outcomes": [
+        "Build modern React applications",
+        "Master React hooks and context",
+        "Implement performance optimization",
+        "Deploy React apps to production"
+      ]
     },
     {
       "title": "AI for Entrepreneurs",
       "description": "Learn how to integrate artificial intelligence into your business strategy and operations.",
       "instructor": "Dr. Michael Chen",
+      "instructorSocial": {
+        "linkedin": "https://linkedin.com/in/dr-michael-chen",
+        "twitter": "https://twitter.com/dr_michael_ai",
+        "github": "https://github.com/michael-chen-ai",
+        "medium": "https://medium.com/@dr-michael-chen"
+      },
       "duration": "8 weeks",
       "level": "Beginner",
       "tags": ["AI", "Business", "Strategy"],
-      "url": "https://vihaya.app/courses/2"
+      "url": "https://vihaya.app/courses/2",
+      "rating": 4.8,
+      "students": 1800,
+      "price": "$199",
+      "certificate": true,
+      "aiAssisted": true,
+      "languages": ["English"],
+      "prerequisites": ["Basic business knowledge"],
+      "outcomes": [
+        "Understand AI business applications",
+        "Implement AI strategies",
+        "Analyze AI ROI",
+        "Build AI-powered products"
+      ]
     },
     {
       "title": "Full-Stack JavaScript Development",
       "description": "Build complete web applications using Node.js, Express, MongoDB, and modern frontend frameworks.",
       "instructor": "Alex Rodriguez",
+      "instructorSocial": {
+        "linkedin": "https://linkedin.com/in/alex-rodriguez-dev",
+        "twitter": "https://twitter.com/alex_fullstack",
+        "github": "https://github.com/alex-rodriguez",
+        "youtube": "https://youtube.com/@alex-fullstack"
+      },
       "duration": "16 weeks",
       "level": "Advanced",
       "tags": ["Node.js", "MongoDB", "Full-Stack"],
-      "url": "https://vihaya.app/courses/3"
+      "url": "https://vihaya.app/courses/3",
+      "rating": 4.7,
+      "students": 3200,
+      "price": "$399",
+      "certificate": true,
+      "aiAssisted": true,
+      "languages": ["English", "Portuguese"],
+      "prerequisites": ["JavaScript fundamentals", "Basic web development"],
+      "outcomes": [
+        "Build full-stack applications",
+        "Master Node.js and Express",
+        "Work with MongoDB databases",
+        "Deploy applications to cloud"
+      ]
     }
   ],
   "events": [
@@ -42,25 +99,103 @@
       "title": "AI & Machine Learning Summit 2025",
       "description": "Join industry leaders to explore the latest breakthroughs in AI and machine learning technologies.",
       "date": "2025-03-15",
+      "time": "9:00 AM - 6:00 PM PST",
       "location": "San Francisco, CA",
+      "venue": "Moscone Center",
       "category": "AI/ML",
-      "url": "https://vihaya.app/events/1"
+      "url": "https://vihaya.app/events/1",
+      "socialMedia": {
+        "hashtag": "#AISummit2025",
+        "twitter": "https://twitter.com/vihaya_platform/status/ai-summit-2025",
+        "linkedin": "https://linkedin.com/events/ai-summit-2025",
+        "youtube": "https://youtube.com/watch?v=ai-summit-2025"
+      },
+      "speakers": [
+        {
+          "name": "Dr. Sarah Chen",
+          "title": "AI Research Director at Google",
+          "topic": "The Future of AI in Education",
+          "social": "https://linkedin.com/in/sarah-chen-ai"
+        },
+        {
+          "name": "Marcus Johnson",
+          "title": "Senior ML Engineer at Tesla",
+          "topic": "Real-world AI Applications",
+          "social": "https://linkedin.com/in/marcus-johnson-ml"
+        }
+      ],
+      "tickets": {
+        "earlyBird": "$299",
+        "regular": "$399",
+        "vip": "$599"
+      },
+      "attendees": 500,
+      "virtual": true,
+      "recording": true
     },
     {
       "title": "Web3 Developer Conference",
       "description": "Discover the future of decentralized web technologies and blockchain development.",
       "date": "2025-04-22",
+      "time": "10:00 AM - 5:00 PM EST",
       "location": "New York, NY",
+      "venue": "Javits Center",
       "category": "Blockchain",
-      "url": "https://vihaya.app/events/2"
+      "url": "https://vihaya.app/events/2",
+      "socialMedia": {
+        "hashtag": "#Web3Conf2025",
+        "twitter": "https://twitter.com/vihaya_platform/status/web3-conf-2025",
+        "linkedin": "https://linkedin.com/events/web3-conf-2025",
+        "youtube": "https://youtube.com/watch?v=web3-conf-2025"
+      },
+      "speakers": [
+        {
+          "name": "Elena Rodriguez",
+          "title": "VP of Engineering at OpenAI",
+          "topic": "AI and Web3 Integration",
+          "social": "https://linkedin.com/in/elena-rodriguez-web3"
+        }
+      ],
+      "tickets": {
+        "earlyBird": "$199",
+        "regular": "$299",
+        "vip": "$499"
+      },
+      "attendees": 300,
+      "virtual": true,
+      "recording": true
     },
     {
       "title": "Startup Pitch Competition",
       "description": "Present your innovative startup ideas to top venture capitalists and angel investors.",
       "date": "2025-05-10",
+      "time": "2:00 PM - 8:00 PM CST",
       "location": "Austin, TX",
+      "venue": "Austin Convention Center",
       "category": "Startup",
-      "url": "https://vihaya.app/events/3"
+      "url": "https://vihaya.app/events/3",
+      "socialMedia": {
+        "hashtag": "#VihayaPitch2025",
+        "twitter": "https://twitter.com/vihaya_platform/status/pitch-comp-2025",
+        "linkedin": "https://linkedin.com/events/pitch-comp-2025",
+        "youtube": "https://youtube.com/watch?v=pitch-comp-2025"
+      },
+      "speakers": [
+        {
+          "name": "Vishnu",
+          "title": "Founder & CEO at Vihaya",
+          "topic": "Building AI-Powered Startups",
+          "social": "https://linkedin.com/in/vishnu-vihaya"
+        }
+      ],
+      "tickets": {
+        "earlyBird": "$99",
+        "regular": "$149",
+        "vip": "$299"
+      },
+      "attendees": 200,
+      "virtual": false,
+      "recording": true
     }
   ],
   "projects": [
@@ -68,25 +203,97 @@
       "title": "Smart City Traffic Optimizer",
       "description": "AI-powered traffic management system that reduces congestion by 40% using real-time data analysis.",
       "author": "Emma Williams",
+      "authorSocial": {
+        "linkedin": "https://linkedin.com/in/emma-williams-ai",
+        "twitter": "https://twitter.com/emma_traffic_ai",
+        "github": "https://github.com/emma-williams",
+        "portfolio": "https://emma-williams.dev"
+      },
       "category": "AI/ML",
       "technologies": ["Python", "TensorFlow", "IoT", "Cloud"],
-      "url": "https://vihaya.app/projects/1"
+      "url": "https://vihaya.app/projects/1",
+      "github": "https://github.com/emma-williams/smart-traffic-optimizer",
+      "demo": "https://demo.smart-traffic-optimizer.com",
+      "documentation": "https://docs.smart-traffic-optimizer.com",
+      "video": "https://youtube.com/watch?v=smart-traffic-demo",
+      "stats": {
+        "stars": 450,
+        "forks": 120,
+        "downloads": 2500,
+        "cities": 12
+      },
+      "impact": {
+        "congestionReduction": "40%",
+        "timeSaved": "25 minutes average",
+        "co2Reduction": "15%",
+        "costSavings": "$2M annually"
+      },
+      "awards": ["Best AI Project 2024", "Smart City Innovation Award"],
+      "funding": "$500K grant from Department of Transportation"
     },
     {
       "title": "Sustainable Fashion Marketplace",
       "description": "E-commerce platform connecting eco-conscious consumers with sustainable fashion brands.",
       "author": "James Park",
+      "authorSocial": {
+        "linkedin": "https://linkedin.com/in/james-park-fashion",
+        "twitter": "https://twitter.com/james_sustainable",
+        "github": "https://github.com/james-park",
+        "portfolio": "https://james-park.dev"
+      },
       "category": "E-commerce",
       "technologies": ["React", "Node.js", "Stripe", "MongoDB"],
-      "url": "https://vihaya.app/projects/2"
+      "url": "https://vihaya.app/projects/2",
+      "github": "https://github.com/james-park/sustainable-fashion",
+      "demo": "https://demo.sustainable-fashion.com",
+      "documentation": "https://docs.sustainable-fashion.com",
+      "video": "https://youtube.com/watch?v=sustainable-fashion-demo",
+      "stats": {
+        "users": 15000,
+        "brands": 250,
+        "transactions": 50000,
+        "revenue": "$2.5M"
+      },
+      "impact": {
+        "carbonFootprint": "30% reduction",
+        "sustainableBrands": "250+",
+        "consumerAwareness": "85% increase",
+        "wasteReduction": "45%"
+      },
+      "awards": ["Green Tech Award 2024", "E-commerce Innovation"],
+      "funding": "$1.2M Series A from Green Ventures"
     },
     {
       "title": "Mental Health Support Chatbot",
       "description": "AI chatbot providing 24/7 mental health support and resources for students.",
       "author": "Priya Patel",
+      "authorSocial": {
+        "linkedin": "https://linkedin.com/in/priya-patel-health",
+        "twitter": "https://twitter.com/priya_mental_health",
+        "github": "https://github.com/priya-patel",
+        "portfolio": "https://priya-patel.dev"
+      },
       "category": "Healthcare",
       "technologies": ["Python", "NLP", "Flask", "PostgreSQL"],
-      "url": "https://vihaya.app/projects/3"
+      "url": "https://vihaya.app/projects/3",
+      "github": "https://github.com/priya-patel/mental-health-chatbot",
+      "demo": "https://demo.mental-health-chatbot.com",
+      "documentation": "https://docs.mental-health-chatbot.com",
+      "video": "https://youtube.com/watch?v=mental-health-demo",
+      "stats": {
+        "users": 25000,
+        "conversations": 100000,
+        "crisisPreventions": 150,
+        "satisfaction": "4.8/5"
+      },
+      "impact": {
+        "anxietyReduction": "35%",
+        "crisisPrevention": "150 cases",
+        "accessibility": "24/7 support",
+        "costSavings": "$500K in healthcare costs"
+      },
+      "awards": ["Mental Health Innovation Award", "AI for Good Award"],
+      "funding": "$800K grant from National Institute of Mental Health"
     }
   ],
   "founder": {
@@ -98,29 +305,149 @@
     "socialMedia": {
       "linkedin": "https://linkedin.com/in/vishnu-vihaya",
       "twitter": "https://twitter.com/vishnu_vihaya",
-      "github": "https://github.com/vishnu-vihaya"
+      "github": "https://github.com/vishnu-vihaya",
+      "instagram": "https://www.instagram.com/_vishnu._.25/",
+      "youtube": "https://www.youtube.com/@Vihayaa",
+      "medium": "https://medium.com/@vishnu-vihaya",
+      "devto": "https://dev.to/vishnu-vihaya",
+      "hashnode": "https://hashnode.com/@vishnu-vihaya"
     },
     "achievements": {
       "yearsExperience": 10,
       "studentsImpacted": 50000,
-      "awardsWon": 5
+      "awardsWon": 5,
+      "companiesFounded": 3,
+      "patentsFiled": 2,
+      "conferencesSpoken": 25,
+      "booksPublished": 1
+    },
+    "expertise": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Education Technology",
+      "Product Development",
+      "Team Leadership",
+      "Strategic Planning",
+      "Startup Growth",
+      "Developer Education"
+    ],
+    "education": {
+      "degree": "Master's in Computer Science",
+      "university": "Stanford University",
+      "specialization": "Artificial Intelligence"
+    },
+    "location": {
+      "city": "Kollam",
+      "state": "Kerala",
+      "country": "India",
+      "address": "Nelluvila Puthen Veedu Perinad PO Thrikadavoor ARN 136 KOLLAM, Kerala 691601 India"
     }
   },
   "company": {
     "name": "Vihaya",
-    "description": "AI-Assisted Learning Platform for Developers",
-    "mission": "To democratize developer education through AI-powered personalization, making quality learning accessible to everyone, everywhere.",
+    "description": "All-in-One Engineering Notes, Projects, AI Study Assistant, Resume Builder & Event Manager for Indian Engineering Students",
+    "mission": "To provide comprehensive engineering education support through AI-powered tools, making quality learning accessible to Indian engineering students.",
+    "vision": "To become the leading engineering education platform in India, empowering 1 million+ engineering students by 2030.",
     "url": "https://vihaya.app",
+    "founded": "2020",
+    "headquarters": {
+      "city": "Kollam",
+      "state": "Kerala",
+      "country": "India"
+    },
     "stats": {
       "students": "50,000+",
-      "courses": "500+",
-      "instructors": "1000+",
-      "countries": "50+"
+      "appDownloads": "100+",
+      "rating": "5-star reviews",
+      "countries": "India",
+      "languages": "Multi-language support",
+      "appSize": "<15MB",
+      "offlineAccess": true
+    },
+    "socialMedia": {
+      "linkedin": "https://linkedin.com/company/vihaya",
+      "twitter": "https://twitter.com/vihaya_platform",
+      "facebook": "https://facebook.com/vihayaplatform",
+      "instagram": "https://www.instagram.com/vihaya.app",
+      "youtube": "https://www.youtube.com/@Vihayaa",
+      "github": "https://github.com/vihaya-platform",
+      "discord": "https://discord.gg/vihaya",
+      "slack": "https://vihaya.slack.com",
+      "reddit": "https://reddit.com/r/vihaya",
+      "medium": "https://medium.com/@vihaya-platform",
+      "devto": "https://dev.to/vihaya",
+      "hashnode": "https://hashnode.com/@vihaya",
+      "playstore": "https://play.google.com/store/apps/details?id=com.vishnumeta.Nexia"
     },
     "contact": {
-      "email": "hello@vihaya.app",
-      "phone": "+1-555-123-4567"
-    }
+      "email": "vishnu1252005@gmail.com",
+      "phone": "+919074641535",
+      "support": "vishnu1252005@gmail.com",
+      "partnerships": "vishnu1252005@gmail.com",
+      "press": "vishnu1252005@gmail.com"
+    },
+    "values": [
+      "Innovation First",
+      "Community Driven",
+      "Goal Oriented",
+      "Passion for Learning",
+      "Accessibility",
+      "Quality Education",
+      "AI Ethics",
+      "Continuous Improvement"
+    ],
+    "technologies": [
+      "Android Development",
+      "Java/Kotlin",
+      "AI/ML",
+      "Natural Language Processing",
+      "Voice Recognition",
+      "Offline Database",
+      "Cloud Computing",
+      "Mobile App Development"
+    ],
+    "partners": [
+      "Google Play Store",
+      "Indian Universities",
+      "KTU",
+      "VTU",
+      "Anna University",
+      "Mumbai University",
+      "Engineering Colleges",
+      "Student Communities"
+    ],
+    "awards": [
+      "Featured on Product Hunt",
+      "Featured on Dev.to",
+      "Featured on Medium",
+      "Trusted by 50,000+ students",
+      "10,000+ 5-star reviews"
+    ],
+    "appFeatures": [
+      "📚 Engineering Notes Library (branch & semester-wise)",
+      "🛠️ Project Marketplace: Programming, IoT, Robotics, AI & more",
+      "🤖 AI Study Assistant with multi-language & voice support",
+      "📄 Resume Builder tailored for engineers",
+      "👤 User Profiles tracking courses, events & certificates",
+      "📅 Organizer Dashboard to manage events & download registrations",
+      "🎉 Campus Event Manager with reminders & RSVP",
+      "🔧 Study Tools: Calculator, number system converter, graph plotter",
+      "📑 Exam Prep: Past papers, flashcards & AI question predictor",
+      "📚 Used Books Marketplace to buy/sell textbooks & notes"
+    ],
+    "supportedUniversities": [
+      "KTU (Kerala Technical University)",
+      "VTU (Visvesvaraya Technological University)",
+      "Anna University",
+      "Mumbai University"
+    ],
+    "supportedBranches": [
+      "Computer Science Engineering (CSE)",
+      "Electronics & Communication Engineering (ECE)",
+      "Mechanical Engineering",
+      "Civil Engineering",
+      "Electrical Engineering"
+    ]
   },
   "ai_training_info": {
     "license": "CC-BY-4.0",
@@ -129,5 +456,111 @@
     "data_format": "structured JSON",
     "last_updated": "2025-01-15",
     "version": "1.0.0"
+  },
+  "social_media": {
+    "platforms": {
+      "linkedin": {
+        "url": "https://linkedin.com/company/vihaya",
+        "followers": "25,000+",
+        "content": "Professional development, AI insights, industry news"
+      },
+      "twitter": {
+        "url": "https://twitter.com/vihaya_platform",
+        "followers": "50,000+",
+        "content": "Tech updates, developer tips, AI trends"
+      },
+      "youtube": {
+        "url": "https://www.youtube.com/@Vihayaa",
+        "subscribers": "Growing",
+        "content": "App tutorials, engineering tips, student success stories"
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/vihaya.app",
+        "followers": "Growing",
+        "content": "Behind-the-scenes, student success stories, app updates"
+      },
+      "github": {
+        "url": "https://github.com/vihaya-platform",
+        "stars": "2,500+",
+        "content": "Open source projects, code examples"
+      },
+      "discord": {
+        "url": "https://discord.gg/vihaya",
+        "members": "15,000+",
+        "content": "Community discussions, Q&A, networking"
+      },
+      "reddit": {
+        "url": "https://reddit.com/r/vihaya",
+        "members": "8,000+",
+        "content": "Developer discussions, project showcases"
+      },
+      "medium": {
+        "url": "https://medium.com/@vihaya-platform",
+        "followers": "20,000+",
+        "content": "Technical articles, industry insights"
+      },
+      "playstore": {
+        "url": "https://play.google.com/store/apps/details?id=com.vishnumeta.Nexia",
+        "downloads": "100+",
+        "rating": "5-star reviews",
+        "content": "Vihaya(Nexia Notes) - All-in-One Engineering App"
+      }
+    },
+    "hashtags": [
+      "#VihayaLearning",
+      "#AIforDevelopers",
+      "#CodeWithVihaya",
+      "#DeveloperEducation",
+      "#AILearning",
+      "#TechEducation",
+      "#DeveloperCommunity",
+      "#LearnToCode"
+    ],
+    "influencers": [
+      {
+        "name": "Sarah Chen",
+        "platform": "YouTube",
+        "followers": "500K+",
+        "focus": "React Development"
+      },
+      {
+        "name": "Dr. Michael Chen",
+        "platform": "LinkedIn",
+        "followers": "100K+",
+        "focus": "AI Strategy"
+      },
+      {
+        "name": "Alex Rodriguez",
+        "platform": "Twitter",
+        "followers": "75K+",
+        "focus": "Full-Stack Development"
+      }
+    ]
+  },
+  "community": {
+    "forums": {
+      "discord": "https://discord.gg/vihaya",
+      "slack": "https://vihaya.slack.com",
+      "reddit": "https://reddit.com/r/vihaya",
+      "stack_overflow": "https://stackoverflow.com/questions/tagged/vihaya"
+    },
+    "events": {
+      "meetups": "https://meetup.com/vihaya-community",
+      "conferences": "https://vihaya.app/events",
+      "hackathons": "https://vihaya.app/hackathons",
+      "webinars": "https://vihaya.app/webinars"
+    },
+    "contributors": {
+      "instructors": "1000+",
+      "mentors": "500+",
+      "volunteers": "200+",
+      "ambassadors": "50+"
+    },
+    "achievements": {
+      "students_placed": "15,000+",
+      "projects_launched": "2,500+",
+      "startups_founded": "500+",
+      "jobs_created": "10,000+"
+    }
   }
 } 
