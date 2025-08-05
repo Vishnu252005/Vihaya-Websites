@@ -70,7 +70,7 @@ export const ProjectDetailPage: React.FC = () => {
     "applicationCategory": project.category,
     "programmingLanguage": project.technologies,
     "codeRepository": project.githubUrl,
-    "url": project.liveUrl || `https://vihaya.com/projects/${project.id}`,
+    "url": project.liveUrl || `https://vihaya.app/projects/${project.id}`,
     "image": project.image,
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -190,7 +190,7 @@ export default TrafficOptimizer;`;
         title={`${project.title} by ${project.author} - Project Showcase | Vihaya`}
         description={`Explore ${project.title}, an innovative ${project.category} project by ${project.author}. Built with ${project.technologies.slice(0, 3).join(', ')}. View code and demo on Vihaya.`}
         keywords={`${project.title}, ${project.author}, ${project.category} project, ${project.technologies.join(', ')}, Vihaya projects, developer showcase, open source`}
-        canonicalUrl={`https://vihaya.com/projects/${project.id}`}
+        canonicalUrl={`https://vihaya.app/projects/${project.id}`}
         ogType="article"
         ogImage={project.image}
         schemaMarkup={projectSchema}

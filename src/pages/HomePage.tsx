@@ -36,8 +36,8 @@ export const HomePage: React.FC = () => {
     "@type": "Organization",
     "name": "Vihaya",
     "description": "AI-Assisted Learning Platform for Developers",
-    "url": "https://vihaya.com",
-    "logo": "https://vihaya.com/logo.png",
+    "url": "https://vihaya.app",
+    "logo": "https://vihaya.app/logo.png",
     "sameAs": [
       "https://twitter.com/vihaya",
       "https://linkedin.com/company/vihaya",
@@ -47,7 +47,7 @@ export const HomePage: React.FC = () => {
       "@type": "ContactPoint",
       "telephone": "+1-555-123-4567",
       "contactType": "customer service",
-      "email": "hello@vihaya.com"
+      "email": "hello@vihaya.app"
     }
   };
 
@@ -127,7 +127,7 @@ export const HomePage: React.FC = () => {
         title="Vihaya - Your AI-Assisted Learning Platform for Developers"
         description="Join millions of developers learning, building, and growing together on Vihaya. Discover tech events, master skills with premium courses, showcase projects, and get AI assistance."
         keywords="Vihaya, AI learning platform, developer courses, tech events, programming projects, coding bootcamp, software development, machine learning courses"
-        canonicalUrl="https://vihaya.com/"
+        canonicalUrl="https://vihaya.app/"
         schemaMarkup={combinedSchema}
         hreflang={[
           { lang: 'en', url: 'https://vihaya.app/' },

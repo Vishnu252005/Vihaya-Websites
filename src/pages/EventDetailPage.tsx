@@ -82,17 +82,17 @@ export const EventDetailPage: React.FC = () => {
     "organizer": {
       "@type": "Organization",
       "name": "Vihaya",
-      "url": "https://vihaya.com"
+      "url": "https://vihaya.app"
     },
     "offers": {
       "@type": "Offer",
       "price": event.price,
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": `https://vihaya.com/events/${event.id}`
+      "url": `https://vihaya.app/events/${event.id}`
     },
     "image": event.image,
-    "url": `https://vihaya.com/events/${event.id}`
+    "url": `https://vihaya.app/events/${event.id}`
   };
 
   const handleRegister = () => {
@@ -137,14 +137,14 @@ export const EventDetailPage: React.FC = () => {
 
   const speakers = [
     { name: 'Dr. Sarah Chen', role: 'AI Research Director at Google', avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150' },
-    { name: 'Marcus Johnson', role: 'Senior ML Engineer at Tesla', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Vishnu', role: 'Founder & CEO at Vihaya', avatar: '/assets/vishnu.jpg' },
     { name: 'Elena Rodriguez', role: 'VP of Engineering at OpenAI', avatar: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150' }
   ];
 
   const agenda = [
     { time: '9:00 AM', title: 'Registration & Welcome Coffee', speaker: 'Event Team' },
     { time: '9:30 AM', title: 'Opening Keynote: The Future of AI', speaker: 'Dr. Sarah Chen' },
-    { time: '10:30 AM', title: 'Machine Learning in Production', speaker: 'Marcus Johnson' },
+    { time: '10:30 AM', title: 'Building AI-Powered EdTech Platforms', speaker: 'Vishnu' },
     { time: '11:30 AM', title: 'Coffee Break & Networking', speaker: '' },
     { time: '12:00 PM', title: 'AI Ethics and Responsible Development', speaker: 'Elena Rodriguez' },
     { time: '1:00 PM', title: 'Lunch & Panel Discussion', speaker: 'All Speakers' },
@@ -167,7 +167,7 @@ export const EventDetailPage: React.FC = () => {
         title={`${event.title} - Tech Event on Vihaya`}
         description={`Join ${event.title} in ${event.location}. ${event.description.substring(0, 120)}... Register now on Vihaya's platform.`}
         keywords={`${event.title}, ${event.category}, tech event, ${event.location}, Vihaya events, developer conference, programming meetup`}
-        canonicalUrl={`https://vihaya.com/events/${event.id}`}
+        canonicalUrl={`https://vihaya.app/events/${event.id}`}
         ogType="event"
         ogImage={event.image}
         schemaMarkup={eventSchema}

@@ -299,11 +299,12 @@
   "founder": {
     "name": "Vishnu",
     "title": "Founder & CEO",
-    "bio": "Vishnu is a visionary entrepreneur and technology leader with over 10 years of experience in AI and education technology. He founded Vihaya with the mission to democratize learning through AI-powered personalization, making quality education accessible to developers worldwide.",
+    "bio": "Vishnu is a visionary entrepreneur and technology leader who founded Vihaya to revolutionize engineering education in India. He created an all-in-one app that combines AI-powered study assistance, project marketplace, and campus event management, making quality engineering education accessible to students across India.",
+    "image": "/assets/vishnu.jpg",
     "company": "Vihaya",
     "url": "https://vihaya.app/about",
     "socialMedia": {
-      "linkedin": "https://linkedin.com/in/vishnu-vihaya",
+      "linkedin": "https://www.linkedin.com/in/vishnumeta/",
       "twitter": "https://twitter.com/vishnu_vihaya",
       "github": "https://github.com/vishnu-vihaya",
       "instagram": "https://www.instagram.com/_vishnu._.25/",
@@ -313,13 +314,16 @@
       "hashnode": "https://hashnode.com/@vishnu-vihaya"
     },
     "achievements": {
-      "yearsExperience": 10,
+      "yearsExperience": 3,
       "studentsImpacted": 50000,
-      "awardsWon": 5,
-      "companiesFounded": 3,
-      "patentsFiled": 2,
-      "conferencesSpoken": 25,
-      "booksPublished": 1
+      "awardsWon": 0,
+      "companiesFounded": 1,
+      "patentsFiled": 0,
+      "conferencesSpoken": 0,
+      "booksPublished": 0,
+      "appDownloads": "100+",
+      "appRating": "5-star reviews",
+      "featuredOn": ["Product Hunt", "Dev.to", "Medium"]
     },
     "expertise": [
       "Artificial Intelligence",
@@ -332,9 +336,9 @@
       "Developer Education"
     ],
     "education": {
-      "degree": "Master's in Computer Science",
-      "university": "Stanford University",
-      "specialization": "Artificial Intelligence"
+      "degree": "Engineering Student",
+      "university": "Indian Engineering College",
+      "specialization": "Computer Science/Technology"
     },
     "location": {
       "city": "Kollam",
@@ -374,9 +378,9 @@
       "discord": "https://discord.gg/vihaya",
       "slack": "https://vihaya.slack.com",
       "reddit": "https://reddit.com/r/vihaya",
-      "medium": "https://medium.com/@vihaya-platform",
-      "devto": "https://dev.to/vihaya",
-      "hashnode": "https://hashnode.com/@vihaya",
+      "medium": "https://medium.com/@vishnu-vihaya",
+      "devto": "https://dev.to/vishnu-vihaya",
+      "hashnode": "https://hashnode.com/@vishnu-vihaya",
       "playstore": "https://play.google.com/store/apps/details?id=com.vishnumeta.Nexia"
     },
     "contact": {
@@ -460,9 +464,9 @@
   "social_media": {
     "platforms": {
       "linkedin": {
-        "url": "https://linkedin.com/company/vihaya",
-        "followers": "25,000+",
-        "content": "Professional development, AI insights, industry news"
+        "url": "https://www.linkedin.com/in/vishnumeta/",
+        "followers": "Growing",
+        "content": "Professional development, AI insights, industry news, founder journey"
       },
       "twitter": {
         "url": "https://twitter.com/vihaya_platform",

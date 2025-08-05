@@ -1,17 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Brain, Github, Twitter, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 export const Footer: React.FC = () => {
+  const navigate = useNavigate();
+  
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleNavigation = (path: string) => {
+    navigate(path);
+  };
+
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: '#', label: 'Email' }
+    { icon: Github, href: 'https://github.com/vishnu-vihaya', label: 'GitHub' },
+    { icon: Twitter, href: 'https://twitter.com/vishnu_vihaya', label: 'Twitter' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/vishnumeta/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:vishnu1252005@gmail.com', label: 'Email' }
   ];
 
   const footerLinks = {
@@ -59,7 +66,7 @@ export const Footer: React.FC = () => {
               <p className="text-sm text-gray-500 mb-2">Founded by</p>
               <div className="flex items-center space-x-3">
                 <img
-                  src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100"
+                  src="/assets/vishnu.jpg"
                   alt="Vishnu - Founder & CEO"
                   className="w-10 h-10 rounded-full object-cover border-2 border-gray-600"
                 />
@@ -100,17 +107,30 @@ export const Footer: React.FC = () => {
             >
               <h3 className="text-lg font-semibold mb-4">{category}</h3>
               <ul className="space-y-2">
-                {links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <motion.a
-                      href="#"
-                      className="text-gray-400 hover:text-white transition-colors duration-300"
-                      whileHover={{ x: 5 }}
-                    >
-                      {link}
-                    </motion.a>
-                  </li>
-                ))}
+                {links.map((link, linkIndex) => {
+                  const getPath = (linkName: string) => {
+                    switch (linkName) {
+                      case 'Events': return '/events';
+                      case 'Courses': return '/courses';
+                      case 'Projects': return '/projects';
+                      case 'About': return '/about';
+                      case 'Contact': return '/contact';
+                      default: return '#';
+                    }
+                  };
+                  
+                  return (
+                    <li key={linkIndex}>
+                      <motion.button
+                        onClick={() => handleNavigation(getPath(link))}
+                        className="text-gray-400 hover:text-white transition-colors duration-300 text-left w-full"
+                        whileHover={{ x: 5 }}
+                      >
+                        {link}
+                      </motion.button>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
           ))}

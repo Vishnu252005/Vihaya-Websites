@@ -38,7 +38,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
         onClose();
         setFormData({ name: '', email: '', password: '' });
       } else {
-        setError('Invalid credentials. Try demo@vihaya.com / demo123');
+        setError('Invalid credentials. Try demo@vihaya.app / demo123');
       }
     } catch (err) {
       setError('Something went wrong. Please try again.');
@@ -109,7 +109,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
                     Demo Credentials:
                   </p>
                   <p className="text-xs text-blue-600 dark:text-blue-300">
-                    Email: demo@vihaya.com<br />
+                    Email: demo@vihaya.app<br />
                     Password: demo123
                   </p>
                 </div>

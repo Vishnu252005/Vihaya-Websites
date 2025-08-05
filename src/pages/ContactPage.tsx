@@ -29,8 +29,8 @@ export const ContactPage: React.FC = () => {
       icon: Mail,
       title: 'Email Us',
       description: 'Send us an email anytime',
-      value: 'hello@vihaya.com',
-      action: 'mailto:hello@vihaya.com'
+      value: 'hello@vihaya.app',
+      action: 'mailto:hello@vihaya.app'
     },
     {
       icon: Phone,
@@ -73,7 +73,7 @@ export const ContactPage: React.FC = () => {
         title="Contact Vihaya - Get Support & Connect With Our Team"
         description="Need help with Vihaya's learning platform? Contact our support team for assistance with courses, events, projects, or technical issues. We're here to help!"
         keywords="Vihaya contact, customer support, help center, technical support, learning platform assistance, contact form"
-        canonicalUrl="https://vihaya.com/contact"
+        canonicalUrl="https://vihaya.app/contact"
       />
     <div className="min-h-screen bg-white dark:bg-gray-800 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,7 +117,7 @@ export const ContactPage: React.FC = () => {
             >
               <div className="w-48 h-48 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  src="/assets/vishnu.jpg"
                   alt="Vishnu - Founder & CEO of Vihaya"
                   className="w-full h-full object-cover"
                 />
@@ -136,16 +136,16 @@ export const ContactPage: React.FC = () => {
                 Founder & CEO
               </p>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 max-w-2xl">
-                Vishnu is a visionary entrepreneur and technology leader with over 10 years of experience 
-                in AI and education technology. He founded Vihaya with the mission to democratize learning 
-                through AI-powered personalization, making quality education accessible to developers worldwide. 
-                His passion for innovation and commitment to empowering learners drives Vihaya's continuous evolution.
+                Vishnu is a visionary entrepreneur and technology leader who founded Vihaya to revolutionize 
+                engineering education in India. He created an all-in-one app that combines AI-powered study 
+                assistance, project marketplace, and campus event management, making quality engineering 
+                education accessible to students across India.
               </p>
               
               {/* Achievements */}
               <div className="grid md:grid-cols-3 gap-4 mb-6">
                 <div className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-1">10+</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-1">3+</div>
                   <div className="text-sm text-gray-600 dark:text-gray-400">Years Experience</div>
                 </div>
                 <div className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-4 text-center">
@@ -153,15 +153,15 @@ export const ContactPage: React.FC = () => {
                   <div className="text-sm text-gray-600 dark:text-gray-400">Students Impacted</div>
                 </div>
                 <div className="bg-white/80 dark:bg-gray-800/80 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">5+</div>
-                  <div className="text-sm text-gray-600 dark:text-gray-400">Awards Won</div>
+                  <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">100+</div>
+                  <div className="text-sm text-gray-600 dark:text-gray-400">App Downloads</div>
                 </div>
               </div>
 
               {/* Social Media Links */}
               <div className="flex justify-center lg:justify-start space-x-4">
                 <motion.a
-                  href="https://linkedin.com/in/vishnu-vihaya"
+                  href="https://www.linkedin.com/in/vishnumeta/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors shadow-lg"
@@ -203,7 +203,7 @@ export const ContactPage: React.FC = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="https://instagram.com/vishnu.vihaya"
+                  href="https://www.instagram.com/_vishnu._.25/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors shadow-lg"

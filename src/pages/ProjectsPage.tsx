@@ -52,7 +52,7 @@ export const ProjectsPage: React.FC = () => {
         title="Developer Project Showcase - Innovative Coding Projects | Vihaya"
         description="Explore innovative projects by talented developers on Vihaya. Discover AI applications, web apps, mobile solutions, and open-source contributions."
         keywords="developer projects, coding showcase, AI projects, web applications, mobile apps, open source, GitHub projects, Vihaya showcase, programming portfolio"
-        canonicalUrl="https://vihaya.com/projects"
+        canonicalUrl="https://vihaya.app/projects"
       />
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

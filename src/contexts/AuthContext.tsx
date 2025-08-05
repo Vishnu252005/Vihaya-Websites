@@ -39,7 +39,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Demo credentials
   const demoCredentials = {
-    email: 'demo@vihaya.com',
+    email: 'demo@vihaya.app',
     password: 'demo123'
   };
 
@@ -57,10 +57,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     if (email === demoCredentials.email && password === demoCredentials.password) {
       const demoUser: User = {
         id: '1',
-        name: 'Alex Johnson',
-        email: 'demo@vihaya.com',
-        avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150',
-        role: 'Premium Member',
+        name: 'Vishnu',
+        email: 'demo@vihaya.app',
+        avatar: '/assets/vishnu.jpg',
+        role: 'Founder & CEO',
         joinDate: '2024-01-15',
         stats: {
           coursesCompleted: 12,
@@ -84,7 +84,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       id: Date.now().toString(),
       name,
       email,
-      avatar: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150',
+      avatar: '/assets/vishnu.jpg',
       role: 'Member',
       joinDate: new Date().toISOString().split('T')[0],
       stats: {

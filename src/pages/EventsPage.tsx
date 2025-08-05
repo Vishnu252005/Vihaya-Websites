@@ -38,7 +38,7 @@ export const EventsPage: React.FC = () => {
         title="Tech Events & Developer Conferences - Vihaya"
         description="Discover upcoming tech events, developer conferences, and programming meetups on Vihaya. Connect with industry leaders and expand your network."
         keywords="tech events, developer conferences, programming meetups, AI summit, blockchain conference, startup events, Vihaya events, networking"
-        canonicalUrl="https://vihaya.com/events"
+        canonicalUrl="https://vihaya.app/events"
       />
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

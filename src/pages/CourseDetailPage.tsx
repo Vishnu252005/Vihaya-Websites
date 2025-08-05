@@ -70,7 +70,7 @@ export const CourseDetailPage: React.FC = () => {
     "provider": {
       "@type": "Organization",
       "name": "Vihaya",
-      "url": "https://vihaya.com"
+      "url": "https://vihaya.app"
     },
     "instructor": {
       "@type": "Person",
@@ -91,10 +91,10 @@ export const CourseDetailPage: React.FC = () => {
       "price": course.price,
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": `https://vihaya.com/courses/${course.id}`
+      "url": `https://vihaya.app/courses/${course.id}`
     },
     "image": course.image,
-    "url": `https://vihaya.com/courses/${course.id}`,
+    "url": `https://vihaya.app/courses/${course.id}`,
     "keywords": course.tags.join(', ')
   };
 
@@ -222,7 +222,7 @@ export const CourseDetailPage: React.FC = () => {
         title={`${course.title} - Online Course by ${course.instructor} | Vihaya`}
         description={`Master ${course.title} with ${course.instructor} on Vihaya. ${course.level} level course, ${course.duration} duration. Join ${course.students}+ students. Enroll now!`}
         keywords={`${course.title}, ${course.instructor}, ${course.level} course, ${course.tags.join(', ')}, Vihaya courses, online learning, programming course`}
-        canonicalUrl={`https://vihaya.com/courses/${course.id}`}
+        canonicalUrl={`https://vihaya.app/courses/${course.id}`}
         ogType="course"
         ogImage={course.image}
         schemaMarkup={courseSchema}

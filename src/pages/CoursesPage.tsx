@@ -52,7 +52,7 @@ export const CoursesPage: React.FC = () => {
         title="Premium Online Courses for Developers - Vihaya"
         description="Learn programming, AI, and web development with expert-led courses on Vihaya. From beginner to advanced levels. Start your coding journey today!"
         keywords="online programming courses, coding bootcamp, web development courses, AI courses, React training, JavaScript courses, Vihaya learning"
-        canonicalUrl="https://vihaya.com/courses"
+        canonicalUrl="https://vihaya.app/courses"
       />
     <div className="min-h-screen bg-white dark:bg-gray-800 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

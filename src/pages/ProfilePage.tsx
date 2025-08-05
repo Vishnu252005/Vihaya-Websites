@@ -100,7 +100,7 @@ export const ProfilePage: React.FC = () => {
         title={`${user.name}'s Profile - Vihaya Dashboard`}
         description={`View ${user.name}'s learning progress, completed courses, attended events, and project portfolio on Vihaya's developer platform.`}
         keywords="Vihaya profile, developer dashboard, learning progress, course completion, project portfolio, user profile"
-        canonicalUrl="https://vihaya.com/profile"
+        canonicalUrl="https://vihaya.app/profile"
         noIndex={true}
       />
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20 pb-8">

@@ -177,19 +177,19 @@ export interface FounderInfo {
 export const founderInfo: FounderInfo = {
   name: 'Vishnu',
   title: 'Founder & CEO',
-  bio: 'Vishnu is a visionary entrepreneur and technology leader with over 10 years of experience in AI and education technology. He founded Vihaya with the mission to democratize learning through AI-powered personalization, making quality education accessible to developers worldwide. His passion for innovation and commitment to empowering learners drives Vihaya\'s continuous evolution.',
+  bio: 'Vishnu is a visionary entrepreneur and technology leader who founded Vihaya to revolutionize engineering education in India. He created an all-in-one app that combines AI-powered study assistance, project marketplace, and campus event management, making quality engineering education accessible to students across India. His passion for innovation and commitment to empowering learners drives Vihaya\'s continuous evolution.',
   vision: 'To create a world where every aspiring developer has access to personalized, AI-powered education that adapts to their unique learning style and career goals. We believe in the power of community-driven learning and the transformative potential of technology education.',
-  image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600',
+  image: '/assets/vishnu.jpg',
   socialMedia: {
-    linkedin: 'https://linkedin.com/in/vishnu-vihaya',
+    linkedin: 'https://www.linkedin.com/in/vishnumeta/',
     twitter: 'https://twitter.com/vishnu_vihaya',
     github: 'https://github.com/vishnu-vihaya',
-    instagram: 'https://instagram.com/vishnu.vihaya'
+    instagram: 'https://www.instagram.com/_vishnu._.25/'
   },
   achievements: {
-    yearsExperience: 10,
+    yearsExperience: 3,
     studentsImpacted: 50000,
-    awardsWon: 5
+    awardsWon: 0
   },
   quote: 'Education is the most powerful weapon which you can use to change the world. At Vihaya, we\'re not just teaching code - we\'re empowering the next generation of innovators to build the future.'
 };
