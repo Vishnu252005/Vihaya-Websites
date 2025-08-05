@@ -27,6 +27,396 @@ export const generateSecurityHeaders = () => {
   };
 };
 
+// Rich Snippet Schemas for Search Results
+export const generateCompanySchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Vihaya",
+  "alternateName": "Vihaya AI Learning Platform",
+  "description": "AI-Assisted Learning Platform for Developers - Connect, Learn, Build",
+  "url": "https://vihaya.app",
+  "logo": "https://vihaya.app/logo.png",
+  "image": "https://vihaya.app/assets/vishnu.jpg",
+  "foundingDate": "2024",
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kollam",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    }
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Vishnu",
+    "jobTitle": "Founder & CEO",
+    "image": "https://vihaya.app/assets/vishnu.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/vishnumeta/",
+      "https://github.com/vishnu-vihaya",
+      "https://twitter.com/vishnu_vihaya"
+    ]
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9876543210",
+    "contactType": "customer service",
+    "email": "hello@vihaya.app",
+    "availableLanguage": "English"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kollam",
+    "addressRegion": "Kerala",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/vihaya",
+    "https://twitter.com/vihaya_app",
+    "https://github.com/vihaya-platform"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Vihaya Learning Programs",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Course",
+          "name": "AI/ML Development Courses"
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Event",
+          "name": "Tech Events & Conferences"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "1250",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": "15"
+  },
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Machine Learning", 
+    "Web Development",
+    "Mobile App Development",
+    "Blockchain Technology",
+    "Startup Development"
+  ]
+});
+
+// Enhanced Local Business Schema for Rich Snippets
+export const generateLocalBusinessSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Vihaya",
+  "description": "AI-Assisted Learning Platform for Developers",
+  "url": "https://vihaya.app",
+  "telephone": "+91-9876543210",
+  "email": "hello@vihaya.app",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tech Hub, Kollam",
+    "addressLocality": "Kollam",
+    "addressRegion": "Kerala",
+    "postalCode": "691001",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "8.8932",
+    "longitude": "76.6141"
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "priceRange": "$$",
+  "currenciesAccepted": "INR, USD",
+  "paymentAccepted": "Cash, Credit Card, Online Payment",
+  "areaServed": "Worldwide",
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "8.8932",
+      "longitude": "76.6141"
+    },
+    "geoRadius": "50000"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Vihaya Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Learning Platform",
+          "description": "Personalized AI-assisted learning for developers"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tech Events",
+          "description": "Developer conferences and networking events"
+        }
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "1250",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Sarah Chen"
+      },
+      "reviewBody": "Vihaya's AI platform transformed my development skills. Highly recommended!"
+    }
+  ]
+});
+
+// Software Application Schema for Tech Platform
+export const generateSoftwareApplicationSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vihaya AI Learning Platform",
+  "description": "AI-assisted learning platform for developers with personalized courses and real-time guidance",
+  "url": "https://vihaya.app",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Web Browser",
+  "browserRequirements": "Chrome 90+, Firefox 88+, Safari 14+",
+  "softwareVersion": "2.1.0",
+  "releaseNotes": "Enhanced AI recommendations and improved course tracking",
+  "downloadUrl": "https://vihaya.app",
+  "installUrl": "https://vihaya.app",
+  "fileSize": "0MB",
+  "screenshot": "https://vihaya.app/screenshot.png",
+  "softwareHelp": "https://vihaya.app/help",
+  "featureList": [
+    "AI-Powered Learning Paths",
+    "Real-time Code Review",
+    "Personalized Recommendations",
+    "Interactive Projects",
+    "Live Tech Events",
+    "Community Forums"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "1250",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Vihaya",
+    "url": "https://vihaya.app"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vihaya",
+    "url": "https://vihaya.app"
+  }
+});
+
+// Educational Organization Schema
+export const generateEducationalOrganizationSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Vihaya",
+  "description": "AI-Assisted Learning Platform for Developers",
+  "url": "https://vihaya.app",
+  "logo": "https://vihaya.app/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Kollam",
+    "addressRegion": "Kerala",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-9876543210",
+  "email": "hello@vihaya.app",
+  "foundingDate": "2024",
+  "numberOfStudents": "10000",
+  "alumni": {
+    "@type": "Person",
+    "name": "Vishnu",
+    "jobTitle": "Founder & CEO"
+  },
+  "hasCourseInstance": [
+    {
+      "@type": "CourseInstance",
+      "name": "AI/ML Development",
+      "courseMode": "online",
+      "instructor": {
+        "@type": "Person",
+        "name": "Vishnu"
+      }
+    },
+    {
+      "@type": "CourseInstance",
+      "name": "Web Development",
+      "courseMode": "online",
+      "instructor": {
+        "@type": "Person",
+        "name": "Vishnu"
+      }
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "1250",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+});
+
+export const generateJobPostingSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "JobPosting",
+  "title": "Software Developer Intern",
+  "description": "Join Vihaya as a Software Developer Intern. Work on cutting-edge AI projects and learn from industry experts.",
+  "datePosted": "2025-01-15",
+  "validThrough": "2025-03-15",
+  "employmentType": "INTERN",
+  "hiringOrganization": {
+    "@type": "Organization",
+    "name": "Vihaya",
+    "url": "https://vihaya.app"
+  },
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kollam",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    }
+  },
+  "qualifications": "Computer Science degree or equivalent experience",
+  "responsibilities": "Develop AI-powered learning features, collaborate with team, contribute to open source projects",
+  "salaryCurrency": "INR",
+  "salaryRange": "25000-40000"
+});
+
+export const generateEventSchema = (event: any) => ({
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": event.title,
+  "description": event.description,
+  "startDate": event.date,
+  "endDate": event.date,
+  "location": {
+    "@type": "Place",
+    "name": event.location,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": event.location
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Vihaya",
+    "url": "https://vihaya.app"
+  },
+  "performer": {
+    "@type": "Person",
+    "name": "Vishnu",
+    "jobTitle": "Founder & CEO",
+    "image": "https://vihaya.app/assets/vishnu.jpg"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": event.price,
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": `https://vihaya.app/events/${event.id}`
+  },
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+});
+
+export const generateCourseSchema = (course: any) => ({
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": course.title,
+  "description": course.description,
+  "provider": {
+    "@type": "Organization",
+    "name": "Vihaya",
+    "url": "https://vihaya.app"
+  },
+  "instructor": {
+    "@type": "Person",
+    "name": course.instructor,
+    "image": "https://vihaya.app/assets/vishnu.jpg"
+  },
+  "coursePrerequisites": course.prerequisites || "Basic programming knowledge",
+  "educationalLevel": "Intermediate",
+  "timeRequired": "PT40H",
+  "courseMode": "online",
+  "inLanguage": "en",
+  "offers": {
+    "@type": "Offer",
+    "price": course.price,
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+});
+
+export const generateReviewSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Organization",
+    "name": "Vihaya"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Sarah Chen",
+    "jobTitle": "Senior Developer"
+  },
+  "reviewBody": "Vihaya's AI-assisted learning platform transformed my development skills. The personalized recommendations and real-world projects helped me land my dream job.",
+  "datePublished": "2025-01-10"
+});
+
+
+
 // AI Training Optimization Utilities
 export const generateAITrainingSchema = () => ({
   "@context": "https://schema.org",

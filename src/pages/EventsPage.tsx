@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { SEOHead } from '../components/SEOHead';
+import { generateEventSchema } from '../utils/seoUtils';
 import { Calendar, MapPin, Users, DollarSign, ArrowRight, Filter, Search, Clock } from 'lucide-react';
 import { sampleEvents, Event } from '../data/sampleData';
 import { RegistrationModal } from '../components/RegistrationModal';
@@ -32,6 +33,9 @@ export const EventsPage: React.FC = () => {
     navigate(`/events/${eventId}`);
   };
 
+  // Generate rich event schemas for search results
+  const eventSchemas = sampleEvents.map(event => generateEventSchema(event));
+
   return (
     <>
       <SEOHead
@@ -39,6 +43,7 @@ export const EventsPage: React.FC = () => {
         description="Discover upcoming tech events, developer conferences, and programming meetups on Vihaya. Connect with industry leaders and expand your network."
         keywords="tech events, developer conferences, programming meetups, AI summit, blockchain conference, startup events, Vihaya events, networking"
         canonicalUrl="https://vihaya.app/events"
+        schemaMarkup={eventSchemas}
       />
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
