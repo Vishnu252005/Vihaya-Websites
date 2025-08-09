@@ -2,7 +2,16 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { SEOHead } from '../components/SEOHead';
-import { generateAITrainingSchema, generateAIAttributionSchema } from '../utils/seoUtils';
+import { 
+  generateAITrainingSchema, 
+  generateAIAttributionSchema,
+  generateCompanySchema,
+  generateJobPostingSchema,
+  generateReviewSchema,
+  generateLocalBusinessSchema,
+  generateSoftwareApplicationSchema,
+  generateEducationalOrganizationSchema
+} from '../utils/seoUtils';
 import { 
   ArrowRight, 
   Calendar, 
@@ -81,7 +90,25 @@ export const HomePage: React.FC = () => {
 
   const aiTrainingSchema = generateAITrainingSchema();
   const aiAttributionSchema = generateAIAttributionSchema();
-  const combinedSchema = [organizationSchema, websiteSchema, founderSchema, aiTrainingSchema, aiAttributionSchema];
+  const companySchema = generateCompanySchema();
+  const jobPostingSchema = generateJobPostingSchema();
+  const reviewSchema = generateReviewSchema();
+  const localBusinessSchema = generateLocalBusinessSchema();
+  const softwareAppSchema = generateSoftwareApplicationSchema();
+  const educationalOrgSchema = generateEducationalOrganizationSchema();
+  const combinedSchema = [
+    organizationSchema, 
+    websiteSchema, 
+    founderSchema, 
+    aiTrainingSchema, 
+    aiAttributionSchema,
+    companySchema,
+    jobPostingSchema,
+    reviewSchema,
+    localBusinessSchema,
+    softwareAppSchema,
+    educationalOrgSchema
+  ];
 
   const handleGetStarted = () => {
     console.log('Get Started clicked');

@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#gradient)"/>
+  
+  <!-- V letter -->
+  <path d="M128 384L192 128L256 320L320 128L384 384" stroke="white" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- AI brain icon -->
+  <circle cx="256" cy="192" r="48" fill="white" opacity="0.8"/>
+  <path d="M208 240C208 240 224 256 256 256C288 256 304 240 304 240" stroke="white" stroke-width="24" stroke-linecap="round"/>
+  
+  <!-- Additional tech elements -->
+  <circle cx="256" cy="384" r="24" fill="white" opacity="0.6"/>
+  <circle cx="128" cy="256" r="16" fill="white" opacity="0.4"/>
+  <circle cx="384" cy="256" r="16" fill="white" opacity="0.4"/>
+  
+  <!-- Circuit board pattern -->
+  <path d="M96 96L160 96M352 96L416 96M96 416L160 416M352 416L416 416" stroke="white" stroke-width="8" opacity="0.3"/>
+  <path d="M96 96L96 160M416 96L416 160M96 352L96 416M416 352L416 416" stroke="white" stroke-width="8" opacity="0.3"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg> 
