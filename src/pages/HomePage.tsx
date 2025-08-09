@@ -26,6 +26,7 @@ import { Projects } from '../components/Projects';
 import { AIChat } from '../components/AIChat';
 import { AIRecommendations } from '../components/AIRecommendations';
 import { VideoPlayer } from '../components/VideoPlayer';
+import { FirebaseTest } from '../components/FirebaseTest';
 
 export const HomePage: React.FC = () => {
   const navigate = useNavigate();
@@ -84,10 +85,7 @@ export const HomePage: React.FC = () => {
 
   const handleGetStarted = () => {
     console.log('Get Started clicked');
-    const nextSection = document.getElementById('features-section');
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate('/courses');
   };
 
   const handleWatchDemo = () => {
@@ -109,6 +107,7 @@ export const HomePage: React.FC = () => {
         navigate('/projects');
         break;
       case 'AI Assistant': {
+        console.log('AI Assistant feature clicked');
         // Scroll to AI Chat section
         const aiSection = document.querySelector('[data-section="ai-chat"]');
         if (aiSection) {
@@ -243,6 +242,11 @@ export const HomePage: React.FC = () => {
 
       {/* Content with relative positioning */}
       <div className="relative z-10">
+      {/* Firebase Test Component */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <FirebaseTest />
+      </div>
+
       {/* Hero Section */}
       <Hero onGetStarted={handleGetStarted} />
 

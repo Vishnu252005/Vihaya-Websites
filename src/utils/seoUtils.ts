@@ -109,7 +109,16 @@ export const generateKeywords = (baseKeywords: string[], pageSpecific: string[] 
 
 export const generateCanonicalUrl = (path: string): string => {
   const baseUrl = 'https://vihaya.app';
+  // Handle search URLs properly
+  if (path.startsWith('/search')) {
+    return `${baseUrl}${path}`;
+  }
   return `${baseUrl}${path}`;
+};
+
+export const generateSearchUrl = (query: string): string => {
+  const baseUrl = 'https://vihaya.app';
+  return `${baseUrl}/search?q=${encodeURIComponent(query)}`;
 };
 
 export const calculateKeywordDensity = (text: string, keyword: string): number => {

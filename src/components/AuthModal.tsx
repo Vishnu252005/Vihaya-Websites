@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Mail, Lock, User, Eye, EyeOff, Sparkles } from 'lucide-react';
+import { X, Mail, Lock, User, Eye, EyeOff, Sparkles, Chrome } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 
 interface AuthModalProps {
@@ -17,14 +17,21 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
     password: ''
   });
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
 
-  const { login, register } = useAuth();
+  const { login, register, loginWithGoogle, error, clearError } = useAuth();
+
+  // Clear error when modal opens/closes
+  useEffect(() => {
+    if (isOpen) {
+      clearError();
+    }
+  }, [isOpen, clearError]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    setError('');
+    clearError();
 
     try {
       let success = false;
@@ -37,13 +44,27 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
       if (success) {
         onClose();
         setFormData({ name: '', email: '', password: '' });
-      } else {
-        setError('Invalid credentials. Try demo@vihaya.app / demo123');
       }
     } catch (err) {
-      setError('Something went wrong. Please try again.');
+      console.error('Auth error:', err);
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    setIsGoogleLoading(true);
+    clearError();
+
+    try {
+      const success = await loginWithGoogle();
+      if (success) {
+        onClose();
+      }
+    } catch (err) {
+      console.error('Google sign-in error:', err);
+    } finally {
+      setIsGoogleLoading(false);
     }
   };
 
@@ -103,15 +124,31 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
 
               {/* Form */}
               <div className="p-8">
-                {/* Demo Credentials Info */}
-                <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl border border-blue-200 dark:border-blue-800">
-                  <p className="text-sm text-blue-800 dark:text-blue-400 font-medium mb-1">
-                    Demo Credentials:
-                  </p>
-                  <p className="text-xs text-blue-600 dark:text-blue-300">
-                    Email: demo@vihaya.app<br />
-                    Password: demo123
-                  </p>
+                {/* Google Sign In Button */}
+                <motion.button
+                  type="button"
+                  onClick={handleGoogleSignIn}
+                  disabled={isGoogleLoading}
+                  className="w-full flex items-center justify-center space-x-3 bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 py-3 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  {isGoogleLoading ? (
+                    <div className="w-5 h-5 border-2 border-gray-400/30 border-t-gray-400 rounded-full animate-spin" />
+                  ) : (
+                    <Chrome className="w-5 h-5" />
+                  )}
+                  <span>{isGoogleLoading ? 'Signing in...' : 'Continue with Google'}</span>
+                </motion.button>
+
+                {/* Divider */}
+                <div className="relative my-6">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-gray-300 dark:border-gray-600" />
+                  </div>
+                  <div className="relative flex justify-center text-sm">
+                    <span className="px-2 bg-white dark:bg-gray-800 text-gray-500">or</span>
+                  </div>
                 </div>
 
                 <form onSubmit={handleSubmit} className="space-y-6">

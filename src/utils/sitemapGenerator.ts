@@ -54,6 +54,12 @@ export const generateSitemap = (): string => {
       lastmod: currentDate,
       changefreq: 'monthly',
       priority: 0.6
+    },
+    {
+      loc: `${baseUrl}/search`,
+      lastmod: currentDate,
+      changefreq: 'daily',
+      priority: 0.7
     }
   ];
 

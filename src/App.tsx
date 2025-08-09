@@ -14,6 +14,7 @@ const EventDetailPage = lazy(() => import('./pages/EventDetailPage').then(module
 const CourseDetailPage = lazy(() => import('./pages/CourseDetailPage').then(module => ({ default: module.CourseDetailPage })));
 const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage').then(module => ({ default: module.ProjectDetailPage })));
 const AboutPage = lazy(() => import('./pages/AboutPage').then(module => ({ default: module.AboutPage })));
+const SearchPage = lazy(() => import('./pages/SearchPage').then(module => ({ default: module.SearchPage })));
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="about" element={<AboutPage />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="profile" element={<ProfilePage />} />
+              <Route path="search" element={<SearchPage />} />
               
               {/* Detail Pages with IDs */}
               <Route path="events/:id" element={<EventDetailPage />} />

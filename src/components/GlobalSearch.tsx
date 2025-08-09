@@ -183,6 +183,8 @@ export const GlobalSearch: React.FC<GlobalSearchProps> = ({ isOpen, onClose }) =
                   <button
                     onClick={() => setQuery('')}
                     className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full"
+                    aria-label="Clear search"
+                    title="Clear search"
                   >
                     <X className="w-4 h-4 text-gray-400" />
                   </button>

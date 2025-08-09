@@ -21,6 +21,7 @@ Allow: /courses
 Allow: /projects
 Allow: /contact
 Allow: /about
+Allow: /search
 Allow: /ai-training-data.json
 
 # Crawl delay (optional - helps with server load)
@@ -270,6 +271,7 @@ Allow: /courses/
 Allow: /events/
 Allow: /projects/
 Allow: /about/
+Allow: /search/
 Allow: /ai-training-data.json
 Allow: /sitemap.xml
 Disallow: /admin/

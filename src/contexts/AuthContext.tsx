@@ -1,26 +1,17 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-
-interface User {
-  id: string;
-  name: string;
-  email: string;
-  avatar: string;
-  role: string;
-  joinDate: string;
-  stats: {
-    coursesCompleted: number;
-    eventsAttended: number;
-    projectsSubmitted: number;
-    certificatesEarned: number;
-  };
-}
+import { auth, onAuthStateChange, signInWithGoogle, signInWithEmail, signUpWithEmail, signOutUser } from '../config/firebase';
+import { createUserProfile, getUserProfile, UserProfile } from '../services/userService';
 
 interface AuthContextType {
-  user: User | null;
+  user: UserProfile | null;
   isAuthenticated: boolean;
+  isLoading: boolean;
   login: (email: string, password: string) => Promise<boolean>;
+  loginWithGoogle: () => Promise<boolean>;
   register: (name: string, email: string, password: string) => Promise<boolean>;
-  logout: () => void;
+  logout: () => Promise<void>;
+  error: string | null;
+  clearError: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -34,81 +25,107 @@ export const useAuth = () => {
 };
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<UserProfile | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  // Demo credentials
-  const demoCredentials = {
-    email: 'demo@vihaya.app',
-    password: 'demo123'
-  };
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // Check for saved user session
-    const savedUser = localStorage.getItem('vihaya_user');
-    if (savedUser) {
-      setUser(JSON.parse(savedUser));
-      setIsAuthenticated(true);
-    }
+    const unsubscribe = onAuthStateChange(async (firebaseUser) => {
+      setIsLoading(true);
+      try {
+        if (firebaseUser) {
+          // Get user profile from Firestore
+          const userProfile = await getUserProfile(firebaseUser.uid);
+          if (userProfile) {
+            setUser(userProfile);
+            setIsAuthenticated(true);
+          } else {
+            // Create new user profile if it doesn't exist
+            const newProfile = await createUserProfile(firebaseUser);
+            setUser(newProfile);
+            setIsAuthenticated(true);
+          }
+        } else {
+          setUser(null);
+          setIsAuthenticated(false);
+        }
+      } catch (error) {
+        console.error('Auth state change error:', error);
+        setError('Authentication error occurred');
+      } finally {
+        setIsLoading(false);
+      }
+    });
+
+    return () => unsubscribe();
   }, []);
 
   const login = async (email: string, password: string): Promise<boolean> => {
-    // Demo login logic
-    if (email === demoCredentials.email && password === demoCredentials.password) {
-      const demoUser: User = {
-        id: '1',
-        name: 'Vishnu',
-        email: 'demo@vihaya.app',
-        avatar: '/assets/vishnu.jpg',
-        role: 'Founder & CEO',
-        joinDate: '2024-01-15',
-        stats: {
-          coursesCompleted: 12,
-          eventsAttended: 8,
-          projectsSubmitted: 5,
-          certificatesEarned: 7
-        }
-      };
-      
-      setUser(demoUser);
-      setIsAuthenticated(true);
-      localStorage.setItem('vihaya_user', JSON.stringify(demoUser));
+    try {
+      setError(null);
+      await signInWithEmail(email, password);
       return true;
+    } catch (error: any) {
+      console.error('Login error:', error);
+      setError(error.message || 'Login failed');
+      return false;
     }
-    return false;
+  };
+
+  const loginWithGoogle = async (): Promise<boolean> => {
+    try {
+      setError(null);
+      await signInWithGoogle();
+      return true;
+    } catch (error: any) {
+      console.error('Google login error:', error);
+      setError(error.message || 'Google login failed');
+      return false;
+    }
   };
 
   const register = async (name: string, email: string, password: string): Promise<boolean> => {
-    // Demo registration logic
-    const newUser: User = {
-      id: Date.now().toString(),
-      name,
-      email,
-      avatar: '/assets/vishnu.jpg',
-      role: 'Member',
-      joinDate: new Date().toISOString().split('T')[0],
-      stats: {
-        coursesCompleted: 0,
-        eventsAttended: 0,
-        projectsSubmitted: 0,
-        certificatesEarned: 0
-      }
-    };
-    
-    setUser(newUser);
-    setIsAuthenticated(true);
-    localStorage.setItem('vihaya_user', JSON.stringify(newUser));
-    return true;
+    try {
+      setError(null);
+      const firebaseUser = await signUpWithEmail(email, password);
+      
+      // Create user profile with additional data
+      await createUserProfile(firebaseUser, { name, role: 'Member' });
+      return true;
+    } catch (error: any) {
+      console.error('Registration error:', error);
+      setError(error.message || 'Registration failed');
+      return false;
+    }
   };
 
-  const logout = () => {
-    setUser(null);
-    setIsAuthenticated(false);
-    localStorage.removeItem('vihaya_user');
+  const logout = async () => {
+    try {
+      setError(null);
+      await signOutUser();
+    } catch (error: any) {
+      console.error('Logout error:', error);
+      setError(error.message || 'Logout failed');
+    }
+  };
+
+  const clearError = () => {
+    setError(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, login, register, logout }}>
+    <AuthContext.Provider value={{ 
+      user, 
+      isAuthenticated, 
+      isLoading, 
+      login, 
+      loginWithGoogle, 
+      register, 
+      logout, 
+      error, 
+      clearError 
+    }}>
       {children}
     </AuthContext.Provider>
   );

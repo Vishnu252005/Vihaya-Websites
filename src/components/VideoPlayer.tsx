@@ -13,38 +13,30 @@ import {
   Download,
   Share2,
   Bookmark,
-  MessageSquare,
   ThumbsUp,
-  ThumbsDown,
-  MoreVertical
+  ThumbsDown
 } from 'lucide-react';
 
 interface VideoPlayerProps {
   src: string;
   title: string;
-  description?: string;
   thumbnail?: string;
-  duration?: string;
   instructor?: string;
   onProgress?: (progress: number) => void;
   onComplete?: () => void;
   autoPlay?: boolean;
   showControlsProp?: boolean;
-  showComments?: boolean;
 }
 
 export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   src,
   title,
-  description,
   thumbnail,
-  duration,
   instructor,
   onProgress,
   onComplete,
   autoPlay = false,
-  showControlsProp = true,
-  showComments = true
+  showControlsProp = true
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -277,6 +269,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 <button
                   onClick={togglePlay}
                   className="text-white hover:text-blue-400 transition-colors"
+                  aria-label={isPlaying ? 'Pause video' : 'Play video'}
+                  title={isPlaying ? 'Pause' : 'Play'}
                 >
                   {isPlaying ? <Pause className="w-6 h-6" /> : <Play className="w-6 h-6" />}
                 </button>
@@ -285,12 +279,16 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 <button
                   onClick={() => skip(-10)}
                   className="text-white hover:text-blue-400 transition-colors"
+                  aria-label="Skip back 10 seconds"
+                  title="Skip back 10 seconds"
                 >
                   <SkipBack className="w-5 h-5" />
                 </button>
                 <button
                   onClick={() => skip(10)}
                   className="text-white hover:text-blue-400 transition-colors"
+                  aria-label="Skip forward 10 seconds"
+                  title="Skip forward 10 seconds"
                 >
                   <SkipForward className="w-5 h-5" />
                 </button>
@@ -304,6 +302,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                   <button
                     onClick={toggleMute}
                     className="text-white hover:text-blue-400 transition-colors"
+                    aria-label={isMuted ? 'Unmute video' : 'Mute video'}
+                    title={isMuted ? 'Unmute' : 'Mute'}
                   >
                     {isMuted ? <VolumeX className="w-5 h-5" /> : <Volume2 className="w-5 h-5" />}
                   </button>
@@ -342,6 +342,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                   <button
                     onClick={() => setShowSettings(!showSettings)}
                     className="text-white hover:text-blue-400 transition-colors"
+                    aria-label={showSettings ? 'Close player settings' : 'Open player settings'}
+                    title={showSettings ? 'Close settings' : 'Open settings'}
                   >
                     <Settings className="w-5 h-5" />
                   </button>
@@ -402,6 +404,8 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
                 <button
                   onClick={toggleFullscreen}
                   className="text-white hover:text-blue-400 transition-colors"
+                  aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+                  title={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
                 >
                   {isFullscreen ? <Minimize className="w-5 h-5" /> : <Maximize className="w-5 h-5" />}
                 </button>
@@ -425,13 +429,25 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
       {/* Action Buttons */}
       <div className="absolute top-4 right-4 flex space-x-2">
-        <button className="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors">
+        <button 
+          className="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors"
+          aria-label="Bookmark video"
+          title="Bookmark video"
+        >
           <Bookmark className="w-4 h-4" />
         </button>
-        <button className="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors">
+        <button 
+          className="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors"
+          aria-label="Share video"
+          title="Share video"
+        >
           <Share2 className="w-4 h-4" />
         </button>
-        <button className="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors">
+        <button 
+          className="p-2 bg-black/50 backdrop-blur-sm rounded-lg text-white hover:bg-black/70 transition-colors"
+          aria-label="Download video"
+          title="Download video"
+        >
           <Download className="w-4 h-4" />
         </button>
       </div>
@@ -440,7 +456,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 };
 
 // Video Comments Component
-export const VideoComments: React.FC<{ videoId: string }> = ({ videoId }) => {
+export const VideoComments: React.FC = () => {
   const [comments, setComments] = useState([
     {
       id: '1',
@@ -546,11 +562,19 @@ export const VideoComments: React.FC<{ videoId: string }> = ({ videoId }) => {
               </div>
               
               <div className="flex items-center space-x-4 mt-2">
-                <button className="flex items-center space-x-1 text-gray-500 hover:text-blue-600 transition-colors">
+                <button 
+                  className="flex items-center space-x-1 text-gray-500 hover:text-blue-600 transition-colors"
+                  aria-label={`Like comment (${comment.likes} likes)`}
+                  title={`Like comment (${comment.likes} likes)`}
+                >
                   <ThumbsUp className="w-4 h-4" />
                   <span className="text-sm">{comment.likes}</span>
                 </button>
-                <button className="flex items-center space-x-1 text-gray-500 hover:text-red-600 transition-colors">
+                <button 
+                  className="flex items-center space-x-1 text-gray-500 hover:text-red-600 transition-colors"
+                  aria-label="Dislike comment"
+                  title="Dislike comment"
+                >
                   <ThumbsDown className="w-4 h-4" />
                 </button>
                 <button className="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">

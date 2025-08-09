@@ -51,6 +51,14 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Search Page -->
+  <url>
+    <loc>https://vihaya.app/search</loc>
+    <lastmod>2025-01-15T10:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- AI Training Data -->
   <url>
     <loc>https://vihaya.app/ai-training-data.json</loc>
