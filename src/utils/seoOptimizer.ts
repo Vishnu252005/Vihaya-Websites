@@ -212,7 +212,7 @@ export const fixCommonSEOIssues = () => {
   if (!document.querySelector('meta[name="description"]')) {
     const metaDescription = document.createElement('meta');
     metaDescription.name = 'description';
-    metaDescription.content = 'Vihaya - AI-Assisted Learning Platform for Developers';
+  metaDescription.content = 'Vihaya App - Learn, Build, and Grow';
     document.head.appendChild(metaDescription);
     fixes.push('Added meta description');
   }

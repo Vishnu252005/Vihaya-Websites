@@ -1,7 +1,7 @@
 {
-  "name": "Vihaya - AI-Assisted Learning Platform",
+"name": "Vihaya App",
   "short_name": "Vihaya",
-  "description": "Join millions of developers learning, building, and growing together on Vihaya's AI-assisted learning platform.",
+"description": "Join developers learning, building, and growing together on the Vihaya app.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

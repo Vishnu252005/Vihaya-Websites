@@ -1,4 +1,4 @@
-# Robots.txt for Vihaya - AI-Assisted Learning Platform
+# Robots.txt for Vihaya App
 
 User-agent: *
 Allow: /

@@ -133,7 +133,7 @@ export const SearchPage: React.FC = () => {
     <>
       <SEOHead
         title={`Search Results for "${query}" | Vihaya`}
-        description={`Search results for "${query}" on Vihaya - AI-Assisted Learning Platform. Find events, courses, and projects related to your search.`}
+        description={`Search results for "${query}" on the Vihaya app. Find events, courses, and projects related to your search.`}
         keywords={`search, ${query}, events, courses, projects, AI learning, developer platform`}
         canonicalUrl={`/search?q=${encodeURIComponent(query)}`}
       />

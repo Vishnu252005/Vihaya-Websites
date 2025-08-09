@@ -54,8 +54,8 @@ export const Footer: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-gray-400 mb-6 max-w-md"
             >
-              Your AI-Assisted Learning Platform. Connecting innovators, learners, and creators 
-              to build the future of technology together.
+              Vihaya app: Connecting innovators, learners, and creators to build the future of
+              technology together.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -114,6 +114,7 @@ export const Footer: React.FC = () => {
                       case 'Courses': return '/courses';
                       case 'Projects': return '/projects';
                       case 'About': return '/about';
+                      case 'Blog': return '/blog';
                       case 'Contact': return '/contact';
                       default: return '#';
                     }

@@ -45,7 +45,7 @@ export const HomePage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Vihaya",
-    "description": "AI-Assisted Learning Platform for Developers",
+        "description": "Vihaya App - Learn, Build, and Grow",
     "url": "https://vihaya.app",
     "logo": "https://vihaya.app/logo.png",
     "sameAs": [
@@ -66,7 +66,7 @@ export const HomePage: React.FC = () => {
     "@type": "WebSite",
     "name": "Vihaya",
     "url": "https://vihaya.app",
-    "description": "Your AI-Assisted Learning Platform for Tech Events, Premium Courses, and Project Showcase",
+        "description": "Vihaya app for Tech Events, Premium Courses, and Project Showcase",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://vihaya.app/search?q={search_term_string}",
@@ -150,7 +150,7 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vihaya - Your AI-Assisted Learning Platform for Developers"
+      title="Vihaya App - Learn, Build, and Grow"
         description="Join millions of developers learning, building, and growing together on Vihaya. Discover tech events, master skills with premium courses, showcase projects, and get AI assistance."
         keywords="Vihaya, AI learning platform, developer courses, tech events, programming projects, coding bootcamp, software development, machine learning courses"
         canonicalUrl="https://vihaya.app/"
@@ -178,7 +178,7 @@ export const HomePage: React.FC = () => {
           }
         ]}
         aiTraining={true}
-        aiAttribution="Vihaya - AI-Assisted Learning Platform for Developers"
+      aiAttribution="Vihaya App"
         aiLicense="CC-BY-4.0"
       />
     <div className="min-h-screen relative overflow-hidden">

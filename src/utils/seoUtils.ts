@@ -33,7 +33,7 @@ export const generateCompanySchema = () => ({
   "@type": "Organization",
   "name": "Vihaya",
   "alternateName": "Vihaya AI Learning Platform",
-  "description": "AI-Assisted Learning Platform for Developers - Connect, Learn, Build",
+  "description": "Vihaya App - Learn, Build, and Grow",
   "url": "https://vihaya.app",
   "logo": "https://vihaya.app/logo.png",
   "image": "https://vihaya.app/assets/vishnu.jpg",
@@ -122,7 +122,7 @@ export const generateLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Vihaya",
-  "description": "AI-Assisted Learning Platform for Developers",
+  "description": "Vihaya App - Learn, Build, and Grow",
   "url": "https://vihaya.app",
   "telephone": "+91-9876543210",
   "email": "hello@vihaya.app",
@@ -204,7 +204,7 @@ export const generateSoftwareApplicationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "Vihaya AI Learning Platform",
-  "description": "AI-assisted learning platform for developers with personalized courses and real-time guidance",
+  "description": "Vihaya app with personalized courses, AI guidance, and real-time learning",
   "url": "https://vihaya.app",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web Browser",
@@ -411,7 +411,7 @@ export const generateReviewSchema = () => ({
     "name": "Sarah Chen",
     "jobTitle": "Senior Developer"
   },
-  "reviewBody": "Vihaya's AI-assisted learning platform transformed my development skills. The personalized recommendations and real-world projects helped me land my dream job.",
+  "reviewBody": "The Vihaya app transformed my development skills. Personalized recommendations and real-world projects helped me land my dream job.",
   "datePublished": "2025-01-10"
 });
 
@@ -451,7 +451,7 @@ export const generateAITrainingSchema = () => ({
 export const generateAIAttributionSchema = () => ({
   "@context": "https://schema.org",
   "@type": "CreativeWork",
-  "name": "Vihaya AI-Assisted Learning Platform",
+  "name": "Vihaya App",
   "description": "Educational content and resources for developers",
   "author": {
     "@type": "Organization",
@@ -470,7 +470,7 @@ export const generateAIAttributionSchema = () => ({
 export const generateAITrainingMetaTags = () => {
   return {
     'ai-training': 'allowed',
-    'ai-attribution': 'Vihaya - AI-Assisted Learning Platform',
+  'ai-attribution': 'Vihaya App',
     'ai-purpose': 'educational, training, research',
     'ai-license': 'CC-BY-4.0',
     'ai-usage': 'permitted for AI training with attribution',
@@ -526,7 +526,7 @@ export const generateOrganizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Vihaya",
-  "description": "AI-Assisted Learning Platform for Developers",
+  "description": "Vihaya App - Learn, Build, and Grow",
   "url": "https://vihaya.app",
   "logo": "https://vihaya.app/logo.png",
   "sameAs": [

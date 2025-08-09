@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base layout fixes: prevent overscroll white gaps and horizontal scroll */
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  html {
+    @apply bg-white dark:bg-gray-900;
+  }
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+  }
+}

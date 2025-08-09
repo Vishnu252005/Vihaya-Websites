@@ -41,7 +41,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   faqs,
   article,
   aiTraining = true,
-  aiAttribution = 'Vihaya - AI-Assisted Learning Platform',
+  aiAttribution = 'Vihaya App',
   aiLicense = 'CC-BY-4.0'
 }) => {
   const fullTitle = title.includes('Vihaya') ? title : `${title} | Vihaya`;

@@ -15,6 +15,8 @@ const CourseDetailPage = lazy(() => import('./pages/CourseDetailPage').then(modu
 const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage').then(module => ({ default: module.ProjectDetailPage })));
 const AboutPage = lazy(() => import('./pages/AboutPage').then(module => ({ default: module.AboutPage })));
 const SearchPage = lazy(() => import('./pages/SearchPage').then(module => ({ default: module.SearchPage })));
+const BlogPage = lazy(() => import('./pages/BlogPage').then(module => ({ default: module.BlogPage })));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage').then(module => ({ default: module.NotFoundPage })));
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
               <Route path="courses" element={<CoursesPage />} />
               <Route path="projects" element={<ProjectsPage />} />
               <Route path="about" element={<AboutPage />} />
+              <Route path="blog" element={<BlogPage />} />
               <Route path="contact" element={<ContactPage />} />
               <Route path="profile" element={<ProfilePage />} />
               <Route path="search" element={<SearchPage />} />

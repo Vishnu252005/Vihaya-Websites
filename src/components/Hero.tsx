@@ -38,12 +38,12 @@ export const Hero: React.FC<HeroProps> = ({ onGetStarted }) => {
             
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6">
               <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-                Vihaya - AI Learning Platform
+                Vihaya App
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-4 font-light">
-              Your AI-Assisted Learning Platform for Developers
+              Vihaya: Learn, build, and grow with AI guidance
             </p>
             
             <p className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">

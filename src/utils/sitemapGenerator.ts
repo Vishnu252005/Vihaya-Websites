@@ -149,7 +149,7 @@ ${xmlFooter}`;
 };
 
 export const generateRobotsTxt = (): string => {
-  return `# Robots.txt for Vihaya - AI-Assisted Learning Platform
+  return `# Robots.txt for Vihaya App
 
 User-agent: *
 Allow: /
@@ -776,10 +776,10 @@ export const generateAITrainingData = () => {
   const trainingData = {
     platform: {
       name: "Vihaya",
-      description: "AI-Assisted Learning Platform for Developers",
+      description: "Vihaya App - Learn, Build, and Grow",
       url: "https://vihaya.app",
       license: "CC-BY-4.0",
-      attribution: "Vihaya - AI-Assisted Learning Platform"
+      attribution: "Vihaya App"
     },
     courses: sampleCourses.map(course => ({
       title: course.title,
